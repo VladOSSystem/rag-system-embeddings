@@ -1,0 +1,79 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+.Python
+
+# Virtual environments
+.venv/
+venv/
+env/
+server/.venv/
+
+# Environment files
+.env
+.env.*
+server/.env
+
+# Byte-compiled / optimized / DLL files
+*.so
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Pytest, mypy, coverage
+.pytest_cache/
+.mypy_cache/
+.coverage
+coverage.xml
+
+# Jupyter
+.ipynb_checkpoints
+
+# IDEs and editors
+.vscode/
+.idea/
+*.iml
+*.sublime-project
+*.sublime-workspace
+*.swp
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+*.pid
+
+# Qdrant (local data directory)
+server/qdrant/data/
+server/qdrant/data/**
+
+# Docker / compose
+docker-compose.override.yml
+
+# Node / web client
+web/node_modules/
+web/dist/
+web/build/
+web/.vite/
+web/.cache/
+web/.env
+web/.env.local
+
+# Misc
+Thumbs.db
+
+# Local test outputs
+*.bak
+*.tmp
+
+# Lock files (optional: you can track these if you prefer)
+# package-lock.json
+# pnpm-lock.yaml
+# yarn.lock
