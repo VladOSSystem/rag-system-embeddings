@@ -10,7 +10,6 @@ export default function App() {
   const [file, setFile] = useState<File | null>(null);
 
   // Option A fileId (still useful if you keep /upload, but Option B doesn't need it)
-  const [fileId, setFileId] = useState("");
   const [uploading, setUploading] = useState(false);
 
   // Option B doc_id (this should match what you ingested into Qdrant, e.g. cv.pdf)
@@ -37,7 +36,6 @@ export default function App() {
       if (!res.ok) throw new Error(await res.text());
 
       const data = await res.json();
-      setFileId(data.fileId);
 
       // If you want, auto-set docId based on filename for Option B:
       setDocId(data.doc_id);
